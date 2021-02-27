@@ -15,7 +15,6 @@ const CreateNote = () => {
     //         logic in case of error
     //     })
     }
-
     return (
         <div style={styleRoot}>
             <h1>Create note</h1>
