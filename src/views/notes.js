@@ -17,7 +17,9 @@ const Notes = () => {
         ]);
     }, [])
     const NoteList = notes.map(note => {
-        if(note.title.toLowerCase().includes(search.toLowerCase()) || search === ''){
+        if(note.title.toLowerCase().includes(search.toLowerCase())
+            || note.tags.includes(search.toLowerCase())
+            || search === ''){
             return (
                 <li key={note.title} style={styleNote}>
                     <h2>{note.title}</h2>
