@@ -11,10 +11,6 @@ const Notes = () => {
         // }).catch((error) => {
         //     actions in case of error
         // })
-        setNotes([
-            {title: 'Test', description: 'Testing', tags: ['luffy', 'zoro', 'sanji']},
-            {title: 'Lorem', description: 'Lorem Ipsum Dolor Sit Amet', tags: ['trafalgar', 'kidd']},
-        ]);
     }, [])
     const NoteList = notes.map(note => {
         if(note.title.toLowerCase().includes(search.toLowerCase())
